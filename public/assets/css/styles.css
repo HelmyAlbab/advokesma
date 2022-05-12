@@ -13,7 +13,6 @@ body {
 }
 #navbar {
     transition: 0.5s ease-out;
-    background: #f1f1f1;
 }
 #nav-brand {
     color: #222;
@@ -35,6 +34,10 @@ body {
 }
 main {
     margin-top: 5.5rem;
+    background: linear-gradient(
+        rgba(172, 240, 244, 0.2),
+        rgba(247, 241, 220, 0.2)
+    );
 }
 .section {
     padding-top: 4rem;

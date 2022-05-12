@@ -12,7 +12,7 @@
         <div class="d-flex justify-content-evenly">
           <a class="button" href="#">Aspirasi</a>
           <a class="button" href="#">Pertanyaan</a>
-          <a class="button" href="#">About</a>
+          <a class="button" href="#">About Us</a>
         </div>
       </div>
       <div class="col text-center pt-5">

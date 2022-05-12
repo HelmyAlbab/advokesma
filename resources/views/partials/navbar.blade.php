@@ -1,4 +1,4 @@
-  <nav class="navbar mt-4 navbar-expand-lg fixed-top" id="navbar">
+  <nav class="navbar mt-4 navbar-expand-lg navbar-light bg-white fixed-top" id="navbar">
     <div class="container">
       <a class="navbar-brand" id="nav-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
@@ -52,7 +52,7 @@
           <a href="#">Pertanyaan</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#">About Us</a>
         </li>
         <li>
           <a href="#">Sign In</a>
