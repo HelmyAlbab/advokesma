@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+body {
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --offcanvas-width: 270px;
+    --topNavbarHeight: 48px;
+}
+.sidebar-nav {
+    width: var(--offcanvas-width);
+    transition: all ease 0.5s;
+}
+.sidebar-link {
+    display: flex;
+    align-items: center;
+}
+.sidebar-link .right-icon {
+    display: inline-flex;
+    transition: all ease 0.5s;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+    transform: rotate(180deg);
+}
+.text-reset {
+    float: right;
+    color: white;
+}
+@media (min-width: 992px) {
+    body {
+        overflow: auto !important;
+    }
+    .offcanvas-backdrop::before {
+        display: none;
+    }
+    main {
+        margin-left: var(--offcanvas-width);
+    }
+    .sidebar-nav {
+        transform: none;
+        visibility: visible !important;
+        top: var(--topNavbarHeight);
+        height: calc(100% - var(--topNavbarHeight));
+    }
+    .text-reset {
+        display: none;
+    }
+}
+.button {
+    color: rgba(255, 255, 255, 0.5);
+}
+div .overflow-x {
+    padding: 4px;
+    width: 800px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    overflow: hidden;
+}
+/* Lines of the Toggler */
+.toggler-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #6298fc;
+    display: block;
+    transition: all 0.5s;
+}
+
+/* Adds Space between the lines */
+.middle-bar {
+    margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 3% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    transform: translateX(60px);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 3% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+    border-radius: 4px;
+    width: 17px;
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    border-radius: 4px;
+    transform: translateX(0);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+    border-radius: 4px;
+    width: 11px;
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: #fff;
+}

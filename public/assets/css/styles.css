@@ -8,6 +8,8 @@
 body {
     overflow-x: hidden;
 }
+
+/* navbar */
 .nav {
     width: 70%;
 }
@@ -32,21 +34,6 @@ body {
     color: #fff;
     background: #222;
 }
-main {
-    margin-top: 5.5rem;
-    background: linear-gradient(
-        rgba(172, 240, 244, 0.2),
-        rgba(247, 241, 220, 0.2)
-    );
-}
-.section {
-    padding-top: 4rem;
-}
-#image {
-    height: 300px;
-    width: 300px;
-}
-
 .offcanvas-body ul {
     font-weight: bold;
     font-size: 1.5rem;
@@ -70,6 +57,29 @@ main {
     color: #fff;
 }
 
+/* main */
+main {
+    background: linear-gradient(
+        rgba(172, 240, 244, 0.2),
+        rgba(247, 241, 220, 0.2)
+    );
+}
+.section {
+    padding-top: 10rem;
+}
+.containLogin {
+    padding-top: 5rem;
+}
+.containRegistrasi {
+    padding-top: 9rem;
+}
+#context {
+    font-size: 20px;
+}
+#image {
+    height: 300px;
+    width: 300px;
+}
 .button {
     text-decoration: none;
     padding: 5px 8px;
@@ -97,18 +107,50 @@ main {
     opacity: 1;
     transform: translateY(-10px);
 }
-#sec2 {
+#sec {
     padding: 5rem 0;
 }
-.explain {
-    font-size: 21px;
+.teamProfile {
+    padding-top: 7rem;
 }
-@media screen and (max-width: 992px) {
-    .explain {
-        font-size: 16px;
+.about {
+    padding: 3rem 5rem;
+    background: linear-gradient(
+        45deg,
+        rgba(156, 230, 234, 0.2),
+        rgba(243, 235, 210, 0.2)
+    );
+}
+.about:nth-child(3) {
+    background: linear-gradient(
+        270deg,
+        rgba(156, 230, 234, 0.2),
+        rgba(243, 235, 210, 0.2)
+    );
+    text-align: end;
+}
+
+/* loginregistrasi */
+.form div input {
+    border-radius: 10px;
+    padding: 7px 0 7px 10px;
+}
+.form div button {
+    border-radius: 15px;
+    padding: 7px 0;
+    width: 150px;
+    background: #626262;
+    border: none;
+}
+.form div button:hover {
+    background: #454444;
+}
+
+/* responsive */
+@media screen and (max-width: 673px) {
+    .row {
+        flex-direction: column-reverse;
     }
-}
-@media screen and (max-width: 690px) {
     .g-3 {
         flex-direction: column;
     }
@@ -122,5 +164,18 @@ main {
     }
     #sec2 {
         flex-direction: column;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about:nth-child(3) {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 992px) {
+    #context {
+        font-size: 15px;
     }
 }

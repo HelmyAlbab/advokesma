@@ -1,6 +1,6 @@
   <nav class="navbar mt-4 navbar-expand-lg navbar-light bg-white fixed-top" id="navbar">
     <div class="container">
-      <a class="navbar-brand" id="nav-brand" href="#">Navbar</a>
+      <a class="navbar-brand" id="nav-brand" href="/">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -8,7 +8,7 @@
       <div class="collapse navbar-collapse justify-content-center nav" id="navbarNav">
         <ul class="navbar-nav gap-2">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Aspirasi</a>
@@ -17,17 +17,17 @@
             <a class="nav-link" href="#">Pertanyaan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="/about">About Us</a>
           </li>
         </ul>
       </div>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav gap-2">
           <li class="nav-item">
-            <a href="#" class="nav-link">Sign In</a>
+            <a href="/login" class="nav-link">Sign In</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Sign Up</a>
+            <a href="/registrasi" class="nav-link">Sign Up</a>
           </li>
         </ul>
       </div>

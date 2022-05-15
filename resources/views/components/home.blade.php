@@ -2,10 +2,10 @@
 
 @section('content')
   <div class="section">
-    <div class="row" id="sec">
-      <div class="col text-center py-4 px-5">
+    <div class="row">
+      <div class="col text-center py-4">
         <h1>Advokesma</h1>
-        <p class="mx-5 mt-4 explain">
+        <p class="mx-5 mt-4" id="context">
           salah satu Departemen yang berada di bawah naungan Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Brawijaya. Sesuai dengan fungsi BEM sebagai badan eksekutif yang menaungi
           mahasiswa FILKOM, BEM diharapkan mampu memberikan manfaat dan pengabdian kepada mahasiswa.
         </p>
@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="mb-4 px-5" id="sec2">
+  <div class="px-5" id="sec">
     <h2 class="text-center py-4">Top News</h2>
     <div class="row g-3">
       <div class="col-sm-4">
