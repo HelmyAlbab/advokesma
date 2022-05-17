@@ -5,23 +5,24 @@
       <div class="row">
         <div class="col-sm-6">
             <div class="container">
-                <form class="form">
+                <form class="form" action="/registrasi">
+                    @csrf
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="nama" name="nama" placeholder="Nama">
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" required autofocus>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email (Menggunakan Email UB)">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email (Menggunakan Email UB)" required>
                     </div>
                     <div class="mb-3">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    {{-- <h5 class="text-center mb-3">Confirm Password</h5> --}}
+                    {{-- <div class="mb-3">
                         <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-                    </div>
-                    <h5 class="text-center mb-3">Confirm Password</h5>
-                    <div class="mb-3">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-                    </div>
+                    </div> --}}
                     <div class="text-center mb-3">
                         <button type="submit" class="btn btn-primary">Create Account</button>
                     </div>

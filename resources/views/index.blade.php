@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="{{ asset('/assets/css/styles.css') }}" />
-    <title>home page</title>
+    <title>{{ $title }}</title>
   </head>
   <body>
     {{-- navbar --}}

@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\loginController;
+use App\Http\Controllers\registrasiController;
+use Illuminate\Routing\Route as RoutingRoute;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,17 +17,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('components.home');
+    return view('components.home',[
+        "title"=>"Home",
+        "active"=>"home"
+    ]);
 });
 Route::get('/about', function () {
-    return view('components.about');
+    return view('components.about',[
+        "title"=>"About Us",
+        "active"=>"about"
+    ]);
 });
-Route::get('/login', function () {
-    return view('loginregis.login');
-});
-Route::get('/registrasi', function () {
-    return view('loginregis.registrasi');
-});
+
+Route::get('/login',[loginController::class, 'index']);
+
+Route::get('/registrasi', [registrasiController::class, 'index']);
+Route::post('/registrasi', [registrasiController::class, 'store']);
+
 Route::get('/dashboard', function () {
     return view('dashboard.index');
 });
