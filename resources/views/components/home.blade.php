@@ -6,13 +6,16 @@
       <div class="col text-center py-4">
         <h1>Advokesma</h1>
         <p class="mx-5 mt-4" id="context">
-          salah satu Departemen yang berada di bawah naungan Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Brawijaya. Sesuai dengan fungsi BEM sebagai badan eksekutif yang menaungi
-          mahasiswa FILKOM, BEM diharapkan mampu memberikan manfaat dan pengabdian kepada mahasiswa.
+          Advokesma bertanggung jawab dalam melakukan kegiatan advokasi
+          terhadap permasalahan mahasiswa kepada pihak terkait sebagai
+          bentuk perjuangan aspirasi mahasiswa.Advokesma juga bertugas
+          untuk menghimpun permasalahan serta menyampaikan informasi
+          terkait kesejahteraan mahasiswa.
         </p>
         <div class="d-flex justify-content-evenly">
-          <a class="button" href="#">Aspirasi</a>
-          <a class="button" href="#">Pertanyaan</a>
-          <a class="button" href="#">About Us</a>
+          <a class="button" href="/aspirasi">Aspirasi</a>
+          <a class="button" href="/pertanyaan">Pertanyaan</a>
+          <a class="button" href="/about">About Us</a>
         </div>
       </div>
       <div class="col text-center pt-5">

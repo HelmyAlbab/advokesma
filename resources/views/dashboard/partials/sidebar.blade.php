@@ -7,7 +7,7 @@
             <span><button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button></span>
           </li>
           <li class="mt-2">
-            <a href="#" class="nav-link px-3 active">
+            <a href="/dashboard" class="nav-link px-3 active">
               <span class="me-3"><i class="bi bi-grid"></i></span>
               <span>Dashboard</span>
             </a>

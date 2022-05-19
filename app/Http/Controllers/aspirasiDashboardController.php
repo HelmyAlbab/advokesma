@@ -14,6 +14,7 @@ class aspirasiDashboardController extends Controller
      */
     public function index()
     {
+        $this->authorize('admin');
         return view('dashboard.aspirasi.index',[
             "aspirasi"=>Aspirasi::all()
         ]);

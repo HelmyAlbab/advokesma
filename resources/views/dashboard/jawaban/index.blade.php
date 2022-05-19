@@ -3,14 +3,14 @@
 @section('dashboardContent')
     <div class="container mt-4">
         <h2 class="text-center">PERTANYAAN</h2>
-        <div class="container mt-3 formPertanyaan">
+        @foreach ($pertanyaans as $item)
+        <div class="container mt-5 mb-5 formPertanyaan">
             @if (session()->has('berhasil'))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     {{ session('berhasil') }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             @endif
-            @foreach ($pertanyaans as $item)
                 <div class="mb-3">
                     <h3>{{ $item->nama }}</h3>
                 </div>
@@ -25,7 +25,7 @@
                     </div>
                     <button type="submit" class="btn btn-secondary">Submit</button> 
                 </form>
-            @endforeach
-        </div>
+            </div>
+        @endforeach
     </div>
 @endsection

@@ -3,7 +3,7 @@
 use App\Http\Controllers\aspirasiController;
 use App\Http\Controllers\aspirasiDashboardController;
 use App\Http\Controllers\homeController;
-use App\Http\Controllers\jawabanController;
+use App\Http\Controllers\jawabanDashboardController;
 use App\Http\Controllers\pertanyaanController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\loginController;
@@ -52,11 +52,10 @@ Route::post('/pertanyaan',[pertanyaanController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard.index');
-})->middleware('auth');
+})->middleware('admin');
 
-Route::get('/dashboard/jawaban',[jawabanController::class, 'index'])->middleware('auth');
-Route::post('/dashboard/jawaban',[jawabanController::class, 'store'])->middleware('auth');
+Route::resource('/dashboard/jawaban',jawabanDashboardController::class)->middleware('admin');
 
-Route::resource('/dashboard/aspirasi',aspirasiDashboardController::class)->middleware('auth');
+Route::resource('/dashboard/aspirasi',aspirasiDashboardController::class)->middleware('admin');
 
-Route::resource('/dashboard/topnews',topnewDashboardController::class)->middleware('auth');
+Route::resource('/dashboard/topnews',topnewDashboardController::class)->middleware('admin');

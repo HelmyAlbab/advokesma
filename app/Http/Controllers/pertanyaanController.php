@@ -19,8 +19,8 @@ class pertanyaanController extends Controller
         $request->validate([
             'nama' => 'required|min:5|max:255',
             'nim' => 'required|min:5|max:255',
-            'prodi' => 'required|min:10',
-            'pertanyaan' => 'required|min:20'
+            'prodi' => 'required|min:5',
+            'pertanyaan' => 'required|min:10'
         ]);
         Pertanyaan::create($request->all());
         return redirect('/pertanyaan')->with('berhasil','Pertanyaan berhasil ditambahkan!');

@@ -27,10 +27,12 @@
             <li class="nav-item dropdown">
               <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-fill"></i> {{ auth()->user()->username }}</a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="/dashboard"><i class="bi bi-layout-text-sidebar-reverse"></i> Dashboard</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
+                @can('admin')
+                  <li>
+                    <a class="dropdown-item" href="/dashboard"><i class="bi bi-layout-text-sidebar-reverse"></i> Dashboard</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                @endcan
                 <li>
                   <form action="logout" method="post">
                     @csrf
@@ -41,10 +43,10 @@
             </li>
           @else
             <li class="nav-item">
-              <a href="/login" class="nav-link">Sign In</a>
+              <a href="/login" class="nav-link {{ ($active === "login") ? 'aktif' : '' }}">Sign In</a>
             </li>
             <li class="nav-item">
-              <a href="/registrasi" class="nav-link">Sign Up</a>
+              <a href="/registrasi" class="nav-link {{ ($active === "registrasi") ? 'aktif' : '' }}">Sign Up</a>
             </li>
           @endauth
         </ul>

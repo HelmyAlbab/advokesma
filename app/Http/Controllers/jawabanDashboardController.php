@@ -6,7 +6,7 @@ use App\Models\Jawaban;
 use App\Models\Pertanyaan;
 use Illuminate\Http\Request;
 
-class jawabanController extends Controller
+class jawabanDashboardController extends Controller
 {
     public function index()
     {

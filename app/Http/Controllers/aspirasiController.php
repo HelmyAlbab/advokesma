@@ -42,8 +42,8 @@ class aspirasiController extends Controller
             'nama' => 'required|min:5|max:255',
             'nim' => 'required|min:5|max:255',
             'prodi' => 'required|min:10',
-            'isu' => 'required|min:20',
-            'harapan' => 'required|min:15',
+            'isu' => 'required|min:5',
+            'harapan' => 'required|min:5',
             'kel_aspirasi' => 'required',
         ]);
         Aspirasi::create($request->all());
