@@ -21,7 +21,7 @@
                         <td>{{ $item->nama }}</td>
                         <td>{{ $item->nim }}</td>
                         <td>
-                            <a href="/dashboard/aspirasi/{{ $item->id }}" class="btn btn-warning">Show</a>
+                            <a href="/dashboard/aspirasi/{{ $item->id }}" class="btn btn-warning text-white">Show</a>
                             <form action="/dashboard/aspirasi/{{ $item->id }}" method="post" class="d-inline">
                                 @method('delete')
                                 @csrf

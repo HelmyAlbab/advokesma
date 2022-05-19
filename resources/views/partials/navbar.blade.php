@@ -29,7 +29,7 @@
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 @can('admin')
                   <li>
-                    <a class="dropdown-item" href="/dashboard"><i class="bi bi-layout-text-sidebar-reverse"></i> Dashboard</a>
+                    <a class="dropdown-item" href="/dashboard/aspirasi"><i class="bi bi-layout-text-sidebar-reverse"></i> Dashboard</a>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                 @endcan

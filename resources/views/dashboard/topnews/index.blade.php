@@ -22,7 +22,7 @@
                     <td>{{ $item->judul }}</td>
                     <td>{{ $item->pj }}</td>
                     <td>
-                        <a href="/dashboard/topnews/{{ $item->id }}" class="btn btn-warning">Show</a>
+                        <a href="/dashboard/topnews/{{ $item->id }}" class="btn btn-warning text-white">Show</a>
                         <a href="/dashboard/topnews/{{ $item->id }}/edit" class="btn btn-primary">Edit</a>
                         <form action="/dashboard/topnews/{{ $item->id }}" method="post" class="d-inline">
                             @method('delete')

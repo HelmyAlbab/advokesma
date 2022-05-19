@@ -10,7 +10,7 @@
                     <article class="my-3 fs-5 text-dark">
                         {!! $topnew->body !!}
                     </article>
-                    <a style="background: #37beb0;color: #fff" class="btn mt-4" href="/">Kembali ke Home</a>
+                    <a style="background: #626262;color: #fff" class="btn mt-4" href="/">Kembali ke Home</a>
                 </div>
             </div>
         </div>
