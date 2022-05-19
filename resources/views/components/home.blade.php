@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="section">
-    <div class="row">
+    <div class="row" id="homeContent">
       <div class="col text-center py-4">
         <h1>Advokesma</h1>
         <p class="mx-5 mt-4" id="context">
@@ -24,39 +24,19 @@
   <div class="px-5" id="sec">
     <h2 class="text-center py-4">Top News</h2>
     <div class="row g-3">
-      <div class="col-sm-4">
-        <div class="card h-100 text-center">
-          <div class="card-body">
-            <h5 class="card-title">Keringanan UKT</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, illo?</p>
-          </div>
-          <div class="card-footer bg-transparent border-top-0 mb-3">
-            <a href="#" class="button">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card h-100 text-center">
-          <div class="card-body">
-            <h5 class="card-title">Info KKN</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="card-footer bg-transparent border-top-0 mb-3">
-            <a href="#" class="button">Read More</a>
+      @foreach ($topnews as $item)    
+        <div class="col-sm-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5 class="card-title">{{ $item->judul }}</h5>
+              <p class="card-text">{{ $item->excerpt }}</p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0 mb-3">
+              <a href="/topnews/{{ $item->id }}" class="button">Read More</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card h-100 text-center">
-          <div class="card-body">
-            <h5 class="card-title">Aspirasi Masyarakat</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="card-footer bg-transparent border-top-0 mb-3">
-            <a href="#" class="button">Read More</a>
-          </div>
-        </div>
-      </div>
+      @endforeach
     </div>
   </div>
 @stop

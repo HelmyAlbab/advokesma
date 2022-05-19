@@ -26,11 +26,7 @@
     <!-- edn offcanvas -->
 
     <main class="mt-5 pt-3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 fw-bold fs-3 text-uppercase">dashboard</div>
-        </div>
-      </div>
+      @yield('dashboardContent')
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

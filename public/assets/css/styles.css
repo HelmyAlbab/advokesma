@@ -30,9 +30,15 @@ body {
     padding: 5px 10px;
     transition: 0.3s ease-in-out;
 }
+#navbarNav .navbar-nav .nav-link.aktif,
 #navbarNav .navbar-nav .nav-link:hover {
     color: #fff;
     background: #222;
+}
+#navbarDropdown {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.2rem;
 }
 .offcanvas-body ul {
     font-weight: bold;
@@ -73,6 +79,9 @@ main {
 .containRegistrasi {
     padding-top: 9rem;
 }
+#sec {
+    padding: 5rem 0;
+}
 #context {
     font-size: 20px;
 }
@@ -107,12 +116,6 @@ main {
     opacity: 1;
     transform: translateY(-10px);
 }
-#sec {
-    padding: 5rem 0;
-}
-.teamProfile {
-    padding-top: 7rem;
-}
 .about {
     padding: 3rem 5rem;
     background: linear-gradient(
@@ -128,6 +131,22 @@ main {
         rgba(243, 235, 210, 0.2)
     );
     text-align: end;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+}
+.btn button {
+    font-weight: 700;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding: 8px 0;
+    width: 200px;
+    background: #626262;
+    border: none;
+}
+.btn button:hover {
+    background: #454444;
 }
 
 /* loginregistrasi */
@@ -148,9 +167,6 @@ main {
 
 /* responsive */
 @media screen and (max-width: 673px) {
-    .row {
-        flex-direction: column-reverse;
-    }
     .g-3 {
         flex-direction: column;
     }
@@ -159,11 +175,11 @@ main {
     }
 }
 @media screen and (max-width: 800px) {
-    #sec {
-        flex-direction: column;
+    .section {
+        padding-top: 6rem;
     }
-    #sec2 {
-        flex-direction: column;
+    #homeContent {
+        flex-direction: column-reverse;
     }
     .about {
         flex-direction: column;
@@ -172,6 +188,9 @@ main {
     .about:nth-child(3) {
         flex-direction: column-reverse;
         text-align: center;
+    }
+    #row {
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 992px) {

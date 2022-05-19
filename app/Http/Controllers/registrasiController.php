@@ -9,7 +9,8 @@ class registrasiController extends Controller
 {
     public function index(){
         return view('loginregis.registrasi',[
-            "title"=>"Registrasi"
+            "title"=>"Registrasi",
+            "active"=>"registrasi"
         ]);
     }
     public function store(Request $request){
