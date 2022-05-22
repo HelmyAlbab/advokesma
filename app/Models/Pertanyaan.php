@@ -9,9 +9,16 @@ class Pertanyaan extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'id';
+
     protected $guarded = ['id'];
 
     protected $hidden = [
         'remember_token'
     ];
+
+    public function jawaban(){
+        return $this->belongsTo(Jawaban::class);
+    }
 }
+

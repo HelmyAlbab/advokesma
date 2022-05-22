@@ -27,7 +27,7 @@ Route::get('/', function(){
     return view('components.home',[
         "title"=>"Home",
         "active"=>"home",
-        "topnews"=>topnew::all()
+        "topnews"=>Topnew::all()
     ]);
 });
 Route::get('/topnews/{id}', [homeController::class,'show']);

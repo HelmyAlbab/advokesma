@@ -27,7 +27,7 @@
                         <form action="/dashboard/topnews/{{ $item->id }}" method="post" class="d-inline">
                             @method('delete')
                             @csrf
-                            <button class="btn btn-danger mb-3" onclick="return confirm('are you sure?')">Delete</button>
+                            <button class="btn btn-danger" onclick="return confirm('are you sure?')">Delete</button>
                         </form>
                     </td>
                 </tr>

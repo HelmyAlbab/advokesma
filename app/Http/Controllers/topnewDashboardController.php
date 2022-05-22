@@ -57,7 +57,8 @@ class topnewDashboardController extends Controller
      */
     public function show($id)
     {
-        
+        $topnews = Topnew::findOrFail($id);
+        return view('dashboard.topnews.show', compact('topnews'));
     }
 
     /**

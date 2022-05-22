@@ -34,6 +34,9 @@
               <h5 class="card-title">{{ $item->judul }}</h5>
               <p class="card-text">{{ $item->excerpt }}</p>
             </div>
+            <div class="mb-3">
+              {{ $item->created_at->diffForHumans() }}
+            </div>
             <div class="card-footer bg-transparent border-top-0 mb-3">
               <a href="/topnews/{{ $item->id }}" class="button">Read More</a>
             </div>
